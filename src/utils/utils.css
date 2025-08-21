@@ -1,0 +1,94 @@
+a:link,
+a:active,
+a:hover {
+  text-decoration: none
+}
+
+.heading {
+  color: var(--primary-color);
+}
+
+.clamped-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.errorMsg,
+.input-error::placeholder {
+  color: var(--danger-color);
+  font-size: small;
+}
+
+.input-success::placeholder {
+  color: var(--success-color);
+  font-size: small;
+}
+
+.errorMsg {
+  font-size: small;
+  margin-top: 8px;
+}
+
+.input-error {
+  border: 1px solid var(--danger-color) !important;
+}
+
+.input-success {
+  border: 1px solid var(--success-color) !important;
+}
+
+.clamped-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.justify-content-end {
+  justify-content: end !important;
+}
+
+section:not(:first-child),
+section.section:not(:first-child) {
+  margin-bottom: 2rem;
+}
+
+section,
+section.section,
+footer,
+header {
+  width: 100%;
+  /* max-width: 1920px; */
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+section:not(:first-child),
+section.section:not(:first-child),
+footer {
+  margin-top: 5rem;
+}
+
+.errorMsg {
+  font-size: small;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+
+.container {
+  width: auto !important;
+}
+
+.relative-position {
+  position: relative;
+  top: -12rem;
+}

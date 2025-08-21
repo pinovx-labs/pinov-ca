@@ -1,0 +1,28 @@
+.bottom-text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--fourth-color);
+  margin: 2rem 0;
+}
+
+.hero-section {
+  width: 100%  !important;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  /* background color */
+  background-color: #273079;
+
+  /* background image */
+  background-image: url("https://res.cloudinary.com/danxk4ua5/image/upload/v1755531174/background_q7dnvv.svg");
+
+  /* how the image behaves */
+  background-size: cover; /* fill the section */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+}

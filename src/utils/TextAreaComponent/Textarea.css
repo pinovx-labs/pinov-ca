@@ -1,0 +1,44 @@
+.form-label {
+  color: var(--black-color);
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+}
+
+textarea,
+.textarea {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 58px;
+border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #000000;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  height: 230px;
+  display: inline-flex;
+  padding: 16px 20px;
+  margin-bottom: 1rem;
+}
+
+
+textarea::placeholder,
+.textarea::placeholder {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: normal;
+}
+
+
+
+textarea:focus-within,
+textarea:focus-visible {
+  outline: 0 !important;
+  border: 1px solid var(--primary-color) !important
+}

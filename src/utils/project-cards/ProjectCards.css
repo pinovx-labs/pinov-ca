@@ -1,0 +1,79 @@
+.project-card {
+  max-width: 500px;
+  margin: 2.5rem auto 0;
+}
+
+.card-img {
+  min-width: 100%;
+  max-width: 200px;
+  min-height: 328px;
+  max-height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -o-transition: 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  -moz-transition: 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  -ms-transition: 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.card-img:hover {
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.card-content {
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 100%;
+}
+
+.card-title-div {
+  position: relative;
+}
+
+.card-truncated-text {
+  color: #BABAC8
+}
+
+.card-title-div p {
+  font-family: "Nunito"sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--white-color);
+}
+
+.card-border {
+  width: 30px;
+  height: 4px;
+  background: var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+  border-radius: 89px;
+  margin: -8px 0;
+}
+
+.cart-text {
+  font-family: "Nunito"sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  color: var(--text-gray-color);
+}
+
+@media (min-width: 900px) {
+  .project-heading {
+    max-width: 429px;
+  }
+}

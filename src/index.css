@@ -1,0 +1,76 @@
+@import url("../src/utils/utils.css");
+
+
+
+:root {
+  --primary-color: #273079;
+  --secondary-color: #000000;
+  --tertiary-color: #1F1F1F;
+  --white-color: #ffffff;
+  
+}
+
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Force containment on all direct children */
+/* body > * {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+} */
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--white-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: var(--white-color);
+  isolation: isolate;
+  -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+}
+
+/* html, body {
+  overflow-x: hidden;
+} */
+
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--primary-color);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+  border: 3px solid var(--primary-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
