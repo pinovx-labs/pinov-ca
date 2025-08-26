@@ -1,11 +1,11 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Header.css";
 import { useExternalMedia } from "../../../../hooks/useExternalMedia";
 import styled from "styled-components";
 import ButtonComponent from "../../../../utils/button/ButtonComponent";
 import { Colors } from "../../../../utils/colors/colors";
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 
 // Add interface for MobileDropdown props
 interface MobileDropdownProps {
@@ -84,15 +84,15 @@ export default function Header() {
 
                   {/* Desktop Button */}
                   <DesktopButton className="desktop-button">
-                    <ButtonComponent
-                      bgColor={whiteColor}
-                      text={"Discover PinovX"}
-                      click={function (): void {
-                        console.log("Button clicked");
-                      }}
-                      isLoading={false}
-                      style={{}}
-                    />
+                    <a href="https://pinovx.com" target="_blank">
+                      <ButtonComponent
+                        bgColor={whiteColor}
+                        text={"Discover PinovX"}
+                        click={() => {}}
+                        isLoading={false}
+                        style={{}}
+                      />
+                    </a>
                   </DesktopButton>
 
                   {/* Mobile Menu Icon */}
@@ -149,42 +149,27 @@ export default function Header() {
                       </Link>{" "}
                     </MobileNavItem>
                     <MobileButtonWrapper>
-                      <Link
-                        to="contact-us"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        onClick={closeMobileMenu}
-                      >
+                      <a href="https://pinovx.com" target="_blank">
                         <ButtonComponent
                           bgColor={whiteColor}
                           text={"Discover PinovX"}
-                          click={function (): void {
-                            console.log("Button clicked");
-                            setIsMenuOpen(false);
-
-                            // Scroll to contact us section
-                            const contactSection =
-                              document.getElementById("contact-us");
-                            if (contactSection) {
-                              contactSection.scrollIntoView({
-                                behavior: "smooth",
-                              });
-                            }
-                          }}
+                          click={() => {}}
                           isLoading={false}
-                          style={{ width: "100%", minWidth: "95%", outline:"none" }}
-                        />{" "}
-                      </Link>
+                          style={{
+                            width: "100%",
+                            minWidth: "95%",
+                            outline: "none",
+                          }}
+                        />
+                      </a>
                     </MobileButtonWrapper>
                   </MobileNav>
                 </MobileDropdown>
               </NavBarSection>
 
-              <HeroTextWrapper >
+              <HeroTextWrapper>
                 <HeroTextTitle>Innovating Beyond Boundaries</HeroTextTitle>
-                <HeroTextDescription >
+                <HeroTextDescription>
                   Building technology that goes beyond transactions, solutions
                   that inspire trust, spark connection, and make life
                   effortlessly digital.
@@ -192,22 +177,28 @@ export default function Header() {
 
                 <BtnWrapper>
                   <ButtonComponent
-                    
                     bgColor={whiteColor}
                     text={"Explore Our Product"}
-                    click={function (): void {
-                      console.log("Button clicked");
-                    }}
+                    click={() =>
+                      scroller.scrollTo("our-products", {
+                        duration: 800,
+                        delay: 0,
+                        smooth: "easeInOutQuart",
+                      })
+                    }
                     isLoading={false}
                     style={{}}
                   />
                   <ButtonComponent
-                    
                     bgColor={"transparent"}
                     text={"Request a Demo"}
-                    click={function (): void {
-                      console.log("Button clicked");
-                    }}
+                    click={() =>
+                      scroller.scrollTo("contact-us", {
+                        duration: 800,
+                        delay: 0,
+                        smooth: "easeInOutQuart",
+                      })
+                    }
                     isLoading={false}
                     style={{
                       border: "1px solid white",
