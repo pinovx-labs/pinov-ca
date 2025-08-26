@@ -9,15 +9,16 @@
 }
 
 .hero-section {
-  width: 100%  !important;
+  width: 100% !important;
   height: 100vh;
   margin: 0;
   padding: 0;
   position: relative;
   overflow-x: hidden;
+  margin-top: -40px;
+
   /* background color */
   background-color: #273079;
-
   /* background image */
   background-image: url("https://res.cloudinary.com/danxk4ua5/image/upload/v1755531174/background_q7dnvv.svg");
 

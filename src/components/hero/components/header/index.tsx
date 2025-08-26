@@ -25,7 +25,7 @@ export default function Header() {
   };
   return (
     <>
-      <section className="hero-section">
+      <div className="hero-section">
         <Container>
           <Row>
             <Col>
@@ -211,7 +211,7 @@ export default function Header() {
             </Col>
           </Row>
         </Container>
-      </section>
+      </div>
     </>
   );
 }
