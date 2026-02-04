@@ -33,11 +33,7 @@ export default function Header() {
                 <NavbarMainSectionWrapper>
                   <ImgNavWrapper>
                     <ImgWrapper>
-                      <img
-                        src={logo}
-                        alt="logo img"
-                        style={{ width: "130px", height: "40px" }}
-                      />
+                      <Logo src={logo} alt="logo img" />
                     </ImgWrapper>
 
                     {/* Desktop Navigation */}
@@ -435,5 +431,19 @@ const NavItem = styled.nav`
     &:hover {
       color: #ccc;
     }
+  }
+`;
+
+const Logo = styled.img`
+  width: 130px;
+  height: auto; /* keeps aspect ratio */
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    width: 100px;
+  }
+
+  @media (max-width: 480px) {
+    width: 80px;
   }
 `;

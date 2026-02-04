@@ -25,7 +25,7 @@ export default function Footer() {
                 data-aos="fade-up"
                 data-aos-once="true"
               >
-                <img src={logo} alt="logo-img" />
+                <Logo src={logo} alt="logo img" />
                 <LogoText>Proven in Network of Value</LogoText>
               </div>
             </Col>
@@ -56,7 +56,6 @@ export default function Footer() {
   );
 }
 
-
 const LogoText = styled.p`
   max-width: 376px;
   font-family: "Montserrat";
@@ -67,10 +66,22 @@ const LogoText = styled.p`
   color: #ffffff;
   margin-top: 20px;
 
-
-  
   @media (min-width: 769px) {
     font-size: 20px;
     line-height: 39px;
+  }
+`;
+
+const Logo = styled.img`
+  width: 130px;
+  height: auto; /* keeps aspect ratio */
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    width: 100px;
+  }
+
+  @media (max-width: 480px) {
+    width: 80px;
   }
 `;

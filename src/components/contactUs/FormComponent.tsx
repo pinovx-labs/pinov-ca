@@ -79,7 +79,7 @@ const FormComponent = () => {
         Contact Us
       </ContactUsText>
       {/* Add ref and onSubmit to the form element */}
-      <form ref={form} onSubmit={sendEmail}>
+      <FormWrapper ref={form} onSubmit={sendEmail}>
         {/* New Field for Title */}
         <InputComponent
           placeholder={"Message Title"}
@@ -134,7 +134,7 @@ const FormComponent = () => {
         <ButtonComponent type="submit" disabled={isSending}>
           {isSending ? "Sending Message..." : "Send Message"}
         </ButtonComponent>
-      </form>
+      </FormWrapper>
     </div>
   );
 };
@@ -185,5 +185,19 @@ const ContactUsText = styled.h3`
   @media (min-width: 769px) {
     font-size: 60px;
     line-height: 58px;
+  }
+`;
+
+const FormWrapper = styled.form`
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
   }
 `;
